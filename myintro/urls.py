@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from myintro import views
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^donkey', views.donkey),
+    url(r'^penguin', views.penguin)
 ]
